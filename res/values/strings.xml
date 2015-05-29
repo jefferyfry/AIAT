@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AIAT</string>
+    <string name="throughput_tab_title">Throughput</string>
+    <string name="stats_tab_title">Stats</string>
+    <string name="logcat_tab_title">Log</string>
+    <string name="logcat_enable_checkbox">Enable Logging</string>
+    <string name="settings_tab_title">Settings</string>
+    <string name="action_bar_menu_item_start">Start</string>
+    <string name="action_bar_menu_item_stop">Stop</string>
+    <string name="action_bar_menu_item_snap">Snap</string>
+    <string name="action_bar_menu_item_save">Save</string>
+    <string name="action_bar_menu_item_about">About</string>
+    <string name="settings_traffic_server_title">Traffic Server</string>
+    <string name="settings_traffic_server_summary">This is the traffic server that will send and receive data.  Ensure that the AIAT Traffic Server is installed there.</string>
+    <string name="settings_enable_traffic_title">Enable Traffic</string>
+    <string name="settings_enable_traffic_summary">Enabled or disable traffic generation.</string>
+    <string name="settings_traffic_type_title">Traffic Type</string>
+    <string name="settings_traffic_type_summary">Choose the traffic type for your test.</string>
+    <string name="settings_num_traffic_threads_title">Number of Threads</string>
+    <string name="settings_num_traffic_threads_summary">Specify the number of traffic threads.</string>
+    <string name="throughput_max_down_title">Max Down</string>
+    <string name="throughput_max_up_title">Max Up</string>
+    <string name="throughput_avg_latency_title">Avg Latency</string>
+    <string name="image_snap_msg_subject">AIAT Test Result Image</string>
+    <string name="image_snap_msg_body">Check out my attached AIAT test result image.</string>
+     <string name="dialog_about_title">About</string>
+     <string name="dialog_snap_progress_title">Snap</string>
+     <string name="dialog_snap_progress_message">Generating image.  Please wait.</string>
+    
+</resources>

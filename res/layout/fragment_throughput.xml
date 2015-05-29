@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gauge="http://schemas.android.com/apk/res/com.clearwire.tools.mobile.aiat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@drawable/clearwire_bg_fwd">
+    <ProgressBar 
+        android:id="@+id/throughput_progress"
+        android:layout_width="match_parent"
+    	android:layout_height="5dp"
+    	android:visibility="gone"
+    	style="@android:style/Widget.ProgressBar.Horizontal"/>
+    <com.clearwire.tools.mobile.aiat.fragments.views.GaugeView
+        android:id="@+id/throughput_gauge"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        gauge:showOuterBorder="false"
+        gauge:showOuterShadow="true"
+        gauge:showOuterRim="true"
+        gauge:showNeedle="true"
+        gauge:showRanges="true"
+        gauge:rangeValues="@array/ranges"
+        gauge:rangeColors="@array/rangeColors"
+        gauge:subdivisions="8"
+        gauge:scaleStartValue="0"
+        gauge:scaleEndValue="80"
+        gauge:showText="true"
+        gauge:textValueColor="#AAFFFFFF"
+        gauge:textValueSize="0.15"/>
+    <LinearLayout 
+        android:id="@+id/throughput_results_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/results_box_bg"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <LinearLayout 
+            android:id="@+id/throughput_max_down_box"
+	        android:layout_width="75dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginLeft="25dp">
+	        <TextView 
+				android:id="@+id/throughput_max_down_title"
+			    android:textColor="@android:color/white"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		        android:text="@string/throughput_max_down_title"
+		        android:gravity="center"
+		        android:textSize="12dp"/>
+	        <TextView 
+				android:id="@+id/throughput_max_down_value"
+			    android:textColor="@android:color/white"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		        android:text="0"
+		        android:gravity="center"
+		        android:textSize="25.0dp"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/throughput_avg_latency_box"
+	        android:layout_width="75dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginLeft="25dp">
+	        <TextView 
+				android:id="@+id/throughput_avg_latency_title"
+			    android:textColor="@android:color/white"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		        android:text="@string/throughput_avg_latency_title"
+		        android:gravity="center"
+		        android:textSize="12dp"/>
+	        <TextView 
+				android:id="@+id/throughput_avg_latency_value"
+			    android:textColor="@android:color/white"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		        android:text="0"
+		        android:gravity="center"
+		        android:textSize="25.0dp"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/throughput_max_up_box"
+	        android:layout_width="75dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginLeft="25dp">
+	        <TextView 
+				android:id="@+id/throughput_max_up_title"
+			    android:textColor="@android:color/white"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		        android:text="@string/throughput_max_up_title"
+		        android:gravity="center"
+		        android:textSize="12dp"/>
+	        <TextView 
+				android:id="@+id/throughput_max_up_value"
+			    android:textColor="@android:color/white"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		        android:text="0"
+		        android:gravity="center"
+		        android:textSize="25.0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--     <ImageView  -->
+<!--             android:id="@+id/throughput_john_saw" -->
+<!--             android:layout_width="wrap_content" -->
+<!-- 			android:layout_height="wrap_content" -->
+<!-- 			android:layout_marginTop="3dp" -->
+<!-- 			android:layout_marginRight="3dp" -->
+<!-- 			android:visibility="gone" -->
+<!-- 			android:src="@drawable/john_saw" -->
+<!-- 			android:layout_alignParentTop="true" -->
+<!--     		android:layout_alignParentRight="true"/> -->
+</RelativeLayout>

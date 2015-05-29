@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+   android:gravity="center"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame">
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+	    	android:layout_height="0dip" 
+            android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout 
+        android:id="@+id/button_panel"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:background="#222222"> 
+	        <Button android:id="@+id/menu_start"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	            android:text="@string/action_bar_menu_item_start"
+	            android:drawableTop="@drawable/menu_start"
+	            android:textColor="#FFFFFF"/>
+			<Button android:id="@+id/menu_stop"
+			    android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	            android:text="@string/action_bar_menu_item_stop"
+	            android:drawableTop="@drawable/menu_stop"
+	            android:textColor="#FFFFFF"
+	            android:enabled="false"/>
+	        <Button android:id="@+id/menu_save"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	            android:text="@string/action_bar_menu_item_save"
+	            android:drawableTop="@drawable/menu_save"
+	            android:textColor="#FFFFFF"
+	            android:enabled="false"
+	            android:visibility="gone"/>
+	        <Button android:id="@+id/menu_snap"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	            android:text="@string/action_bar_menu_item_snap"
+	            android:drawableTop="@drawable/menu_snap"
+	            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

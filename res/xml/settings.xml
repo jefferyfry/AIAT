@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+	    android:key="settings_enable_traffic"
+	    android:title="@string/settings_enable_traffic_title"
+	    android:summary="@string/settings_enable_traffic_summary" 
+	    android:defaultValue="true"/>
+    <EditTextPreference
+		android:key="settings_traffic_server"
+		android:title="@string/settings_traffic_server_title"
+		android:summary="@string/settings_traffic_server_summary"
+		android:dialogTitle="@string/settings_traffic_server_title" 
+		android:defaultValue="speedy.clearwire-lab.net"/>
+    <ListPreference
+	    android:key="settings_traffic_type"
+	    android:title="@string/settings_traffic_type_title"
+	    android:summary="@string/settings_traffic_type_summary"
+	    android:entries="@array/traffic_type_list"
+	    android:entryValues="@array/traffic_type_values"
+	    android:dialogTitle="@string/settings_traffic_type_title" 
+	    android:defaultValue="4"/>
+    <ListPreference
+	    android:key="settings_num_traffic_threads"
+	    android:title="@string/settings_num_traffic_threads_title"
+	    android:summary="@string/settings_num_traffic_threads_summary"
+	    android:entries="@array/number_of_traffic_threads"
+	    android:entryValues="@array/number_of_traffic_threads"
+	    android:dialogTitle="@string/settings_num_traffic_threads_title" 
+	    android:defaultValue="3"/>
+</PreferenceScreen>
